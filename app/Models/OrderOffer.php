@@ -16,10 +16,10 @@ class OrderOffer extends Model
     ];
     public function Order()
     {
-        return $this->belongsTo(Order::class); /// بتجيب الاب بتاعي 
+        return $this->belongsTo(Order::class); 
     }
     public function Offer()
     {
-        return $this->hasOne(Offer::class,'id','Offer_Id'); //// بتجيب الابن بتاعي 
+        return $this->hasOne(Offer::class,'id','Offer_Id'); 
     }
 }
