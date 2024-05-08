@@ -1,0 +1,63 @@
+Create ERD ==========> Database And Send To mina
+
+
+//////////////////////////////////////////////////////// DataBase //////////////////////////////////////////////////////////////////////////////////
+
+Category {id , name, Image, Description} ------------------------------------------------------------------------------done
+Offer {id, total, Product_Id, Qty, Img, Description}-------------------------------------------------------------------done
+Order {id, User_id, Address, Qty, total ==> OrderTotal} ---------------------------------------------------------------done
+OrderProducts {id, Order_id, Product_Id, Qty, TotalPrice} -------------------------------------------------------------done
+OrderOffers {id, Order_id, Offer_id, Qty, Total}-----------------------------------------------------------------------done
+Product {id, name, description, model, price, Qty, color, Image1, Category_id, Supplier_id  } -------------------------done
+Supplier {Id, Name, Phone, Address, E-mail} ---------------------------------------------------------------------------done
+User {id, Fname, lname, Phone, password, gender, Email, Role} ---------------------------------------------------------done
+
+
+////////////////////////////////////////////////////// Pages ////////////////////////////////////////////////////////////////////////////////////
+
+/* pages
+- login 
+- register
+
+/***************************************************** user ***********************************************************************************/
+- home ===================> 
+- cart ===================> Create Order Button Will Be Added 
+- category ===============> انظمه المراقبه ( Nav Bar ) يدخل علي ال category يظهر المنتجات بتاعته وهنا اعرض تفاصيل المنتج product ================> Details
+- Footer =================> من نحن
+- engineers ==============> صفحه تركيب الانظمه هما اللي عاملينها
+
+/***************************************************** admin **********************************************************************************/
+
+- home ===================> Dshpord Admin معلومات عن الموقع زي عدد المنتجات عدد ال Categories 
+- category ===============> Crud Operations انظمه مراقبه
+- product ================> Crud Operations المنتجات
+- supplier ===============> Crud Operations الموردين 
+- offers =================> Crud Operations عروض و خصومات 
+- users ==================> Make other Admins المستخدمين
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+======> array {local storage} =>{count:10, Total:10, "Products":[{Product_Id:1, Qty:2, Total:200 }], "Offers":[{Offer_Id:1, Qty:2, Total:200}]}
+- Admin Page => orders =================> Show All Orders                  ?????????????????????????????????????????????????????????????????????????????????????
+	Cart {id, user_id,total, count}
+	CartProducts {Cart_id, Product_id, Qty, Total}
+	CartOffer {Cart_id, Offer_id, Qty, Total}
+*/
